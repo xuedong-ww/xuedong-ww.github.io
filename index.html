@@ -78,7 +78,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="https://github.com/" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/xuedong-ww" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 		        
@@ -119,7 +119,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/xuedong-ww" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/" title="weibo"><i class="icon-weibo"></i></a>
 			        
@@ -174,44 +174,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><ol>
-<li><p>为什么要写博客？</p>
-<p>听说大佬都有自己的博客，所有我这个菜鸡程序员也学着写了自己的博客，而且最近新学markdown语法，觉得写博客很合适，而且正值国家疫情严重的特殊时刻，能尝试着迈出一步也是不错的。</p>
-</li>
-<li><p>写代码的目的?</p>
-<p>关于写代码，我以前认为写代码是一件很酷的事情，就像电影里的hacker一样，屏幕面前代码流闪烁，指尖飞速舞动，然后就能完成一件又一件的事情。后来我发现这样的认知是错误滴，写代码并不神秘，hacker也不是程序员的追求，写代码有时甚至有点痛苦，在思索不到合适算法的时候，在照抄下来都无法正常运行的时候，但是在这些都解决以后仍然会有学到新知识的喜悦感。写代码会有炫耀的目的? 我觉得之前是有的，其实写代码越写越可以发现自己的差距，外行看热闹。之前写的c或者c++大作业，在企业级的应用来看根本没有用处，写代码更像是一种修行，可以选择学习自己感兴趣的，也可以选择适合行业的，钻研一段时间才能出成果。</p>
-</li>
-<li><p>这次写代码的感悟?</p>
-<p>写代码的感悟，一直都存在，就是你未接触之前的确啥都不懂，但是接触过后会觉得一切还好，一位舍友经常告诉我，要树立行业观念，就经常不可避免想到一些入职什么的问题，比如，程序员实际上也就是互联网世界的搬砖工；35岁是程序员的分水岭，要在这之前登上管理层；互联网领域的风口浪尖，猪也能飞上天；当今互联网公司残酷的淘汰制度。但是转念又一想，我™还没毕业呢，想这种事情的时间还多的是，应该趁着还在学校多学一些东西，不管是代码还是课程，总说着在学校里挤不出时间来，时间还是有，有时太过懒惰，多写代码还是会有所提升。感悟之二：体会到开源精神的伟大，要不然我没法查到资料解决问题。</p>
-</li>
-</ol>
-<h3 id="技术实现"><a href="#技术实现" class="headerlink" title="技术实现"></a>技术实现</h3><p>​     接下来写一点技术方面的东西，本博客是基于hexo的静态博客，至于为什么不写动态博客，因为本人水平有限，动态博客中涉及到前后端链接和服务器部署方面知识还很欠缺，所以只基于本人所学写一点自我理解。</p>
-<ul>
-<li>基础准备</li>
-</ul>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//涉及到node 和 git的下载,二者均可在官网轻松下载&amp;安装</span></span><br><span class="line"><span class="comment">//然后打开 Git bash 检查node和npm版本</span></span><br><span class="line">node -v &amp; npm -v</span><br><span class="line"><span class="comment">//接着安装cnpm 利用淘宝镜像</span></span><br><span class="line">npm install -g cnpm --registery=https:<span class="comment">//registery.npm.taobao.org</span></span><br><span class="line"><span class="comment">//之后继续安装hexo</span></span><br><span class="line">cnpm install -g hexo-cli</span><br><span class="line"><span class="comment">//然后验证hexo安装</span></span><br><span class="line">hexo -v</span><br><span class="line"><span class="comment">//至此准备工作完成</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>基础命令</li>
-</ul>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">pwd  <span class="comment">//查看当前路径</span></span><br><span class="line">ls   <span class="comment">//当前路径下文件</span></span><br><span class="line">ls -l<span class="comment">//呈列显示文件</span></span><br><span class="line">vim <span class="comment">//接文件名表示访问该文件 按i进入插入or编辑模式 </span></span><br><span class="line"><span class="comment">//退出时采用:wq没有成功 后经搜索后使用esc+两次大写z成功保存并退出</span></span><br><span class="line">cd <span class="comment">//表示进入，后接文件名和/</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>基本流程</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建空文件夹 使用hexo init初始化框架 该步骤较慢</span></span><br><span class="line"><span class="comment">//利用hexo clean清除缓存文件</span></span><br><span class="line"><span class="comment">//利用hexo n "博客名" 可生成一篇markdown格式的文章 </span></span><br><span class="line"><span class="comment">//可在source文件夹_post 文件中找到 利用其它软件编辑保存，也可以直接进入文件vim编辑</span></span><br><span class="line"><span class="comment">//编写完成后 hexo s可在本地启动博客 查看预览效果</span></span><br><span class="line"><span class="comment">//然后可以vim 更改_config.yml 中的deploy(推到远端)</span></span><br><span class="line"><span class="comment">//type: git</span></span><br><span class="line"><span class="comment">//repo: github仓库中项目地址</span></span><br><span class="line"><span class="comment">//branch: master</span></span><br><span class="line"><span class="comment">//保存退出后可hexo d实现远端推送</span></span><br><span class="line"><span class="comment">//如果出现如unable to auto-detect email address的问题</span></span><br><span class="line"><span class="comment">//可以找到找到工程目录的.git文件夹，打开之后找到config文件，在最后边加上一句话</span></span><br><span class="line">[user]</span><br><span class="line">email=your email</span><br><span class="line">name=your name   ^wrong <span class="number">1</span></span><br><span class="line"><span class="comment">//然后可以在hexo d 弹出窗口中输入自己github的邮箱和账户，即完成操作</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p>==wrong 1== -&gt; <a href="https://blog.csdn.net/nineya_com/article/details/103301870" target="_blank" rel="noopener">解决方案</a></p>
-<p>==参考文献== -&gt;<a href="https://m.bilibili.com/video/av44544186?from=search&seid=1621519341015391579" target="_blank" rel="noopener">点击这里</a></p>
-<ul>
-<li><p>拓展</p>
-<p> 可以自行在GitHub上寻找主题或其他内容</p>
-</li>
-</ul>
-<h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><p>   开始写2020，可能是因为2020的世事无常，可能是还没有和2019好好道别，现在已经是20年2月5日，2019年过的还不错(可能是混的)，比较迷恋comedy，疯狂追完生活大爆炸十二季，看过瑞克与莫蒂四季，看过Trevor Noah，Ronny chieng，Strom Xu的一些单口喜剧，还看过几集石原里美的电视剧，听过一段时间郭德纲相声，看完了小欢喜，前几天看完了爱情公寓5，这样一说时间就没了，但是我仍然想说其他。</p>
-<p>   这篇博客不会有什么读者，所以最后想写给我的宝贝，我所有能回想起来的，最后的2019，还是很幸运的遇见了宝贝，i am a lucky man,鼓足勇气做了自己想做的，在和宝贝在一起之后，我感觉自己是有点变化和进步吧，变化的话，以前我真的不喜欢在群里发言，我觉得大家话题转变太快，又跟不上他们，现在，比以前会自信一点，宝贝的乐观同样激励着我，和宝贝在一起真的会可可爱爱，进步，可能是情商有一点进步吧，之前我也不懂怎么去聊天，有时还会很紧张，但是和宝贝聊天很舒适，可以说任何想说的，甚至还可以给宝贝讲今天又写了什么代码，哈哈哈，真的，我变得想唱歌，想跳舞，我姥说我二十多岁还像个小孩一样不稳重，但是我真的很开心，我可以大声给所有人讲，这是我的宝贝女朋友送我的礼物，在我的小妹问我为什么胳膊上带着皮筋，我说，每天带着她才会有精力。如果可能的话，博客以后有访问量，我就把宝贝的公众号放在旁边，宝贝的文章写的超级棒，希望宝贝有时间也可以继续做下去呢。(想放一张宝贝的美图…没有成功！！)</p>
-<p>  2020，前段时间想到关键词是珍惜，现在我觉得还应该去做，去努力，未来毕竟取决于现在</p>
-
+<li><p>为什么要写博客？
+        
       
 
       
