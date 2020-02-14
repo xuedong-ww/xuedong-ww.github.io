@@ -42,7 +42,7 @@
       <!--
  * @Author: your name
  * @Date: 2020-02-05 09:49:05
- * @LastEditTime : 2020-02-08 14:15:39
+ * @LastEditTime : 2020-02-14 17:23:00
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\XueDong\blog\themes\yilia\layout\_partial\left-col.ejs
@@ -94,9 +94,34 @@
 		        
 					<a class="mail" target="_blank" href="../../mailto:2497648220@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
-			</div>			
+			</div>		
+			<div class="date" >
+				<script type="text/javascript">          
+					var date1= '2019/09/15 00:00:00';  //开始时间  
+					var date2 = new Date();    //结束时间  
+					var date3 = date2.getTime() - new Date(date1).getTime();   //时间差的毫秒数        
+				  
+					//------------------------------  
+				  
+					//计算出相差天数  
+					var days=Math.floor(date3/(24*3600*1000))  
+				  
+					//计算出小时数  
+				  
+					var leave1=date3%(24*3600*1000)    //计算天数后剩余的毫秒数  
+					var hours=Math.floor(leave1/(3600*1000))  
+					//计算相差分钟数  
+					var leave2=leave1%(3600*1000)        //计算小时数后剩余的毫秒数  
+					var minutes=Math.floor(leave2/(60*1000))  
+					//计算相差秒数  
+					var leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数  
+					var seconds=Math.round(leave3/1000)  
+					document.write(" ♥ "+days+"天 "+hours+"小时 "+minutes+" 分钟"+seconds+" 秒")
+				   // alert(" & "+days+"天 "+hours+"小时 "+minutes+" 分钟"+seconds+" 秒")  
+				</script> 
+			</div>	
 			
-				<div style="position:absolute; bottom:120px left:auto; width:85%">
+				<div style="position: relative; bottom:80px left:auto; width:85%">
 					<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="240" height="52" src="//music.163.com/outchain/player?type=2&id=1393178113&auto=0&height=32"></iframe>
 				</div>
 			
